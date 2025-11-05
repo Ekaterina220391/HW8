@@ -41,21 +41,38 @@ public class Main {
         System.out.println("Задача 3.1");
         int j;
         for (j = weight.length - 1; j >= 0; j--) {
-            System.out.print(weight[j] + ",");
+            if (j > 0) {
+                System.out.print(weight[j] + ",");
+            }
+            if (j == 0) {
+                System.out.print(weight[j] + ".");
+            }
         }
+
+
         System.out.println("\n");
 
         System.out.println("Задача 3.2");
         for (int f = second.length - 1; f >= 0; f--) {
-            System.out.print(second[f] + ",");
+            if (f > 0) {
+                System.out.print(second[f] + ",");
+            }
+            if (f == 0) {
+                System.out.print(second[f] + ".");
 
+            }
 
         }
         System.out.println("\n");
 
         System.out.println("Задача 3.3");
         for (int m = third.length - 1; m >= 0; m--) {
-            System.out.print(third[m] + ",");
+            if (m > 0) {
+                System.out.print(third[m] + ",");
+            }
+            if (m == 0) {
+                System.out.print(third[m] + ".");
+            }
         }
         System.out.println("\n");
         System.out.println("Задача 4");
@@ -63,8 +80,8 @@ public class Main {
             if (weight[d] % 2 != 0) {
                 weight[d] = weight[d] + 1;
             }
-            System.out.println(Arrays.toString(weight));
         }
+        System.out.println(Arrays.toString(weight));
 
 
     }
